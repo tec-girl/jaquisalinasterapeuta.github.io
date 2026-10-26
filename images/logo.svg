@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="skyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0288D1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aqua" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#26A69A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00897B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F48FB1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC407A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#26A69A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Soft circle background -->
+  <circle cx="100" cy="100" r="95" fill="#E1F5FE" opacity="0.6"/>
+  
+  <!-- Head silhouette inspired by original, in sky blue -->
+  <path d="M120 40 
+           C145 45, 160 70, 155 100 
+           C150 130, 140 150, 130 160 
+           C125 165, 120 170, 115 175
+           L115 180 L85 180 L85 175
+           C80 170, 75 165, 70 160
+           C60 150, 50 130, 45 100
+           C40 70, 55 45, 80 40
+           C90 38, 110 38, 120 40 Z" 
+        fill="url(#skyBlue)" opacity="0.9"/>
+  
+  <!-- Inner head detail / face profile -->
+  <path d="M130 70 
+           C140 85, 145 100, 140 120
+           C135 140, 125 150, 115 155
+           L115 160 L100 160
+           C95 150, 90 140, 88 120
+           C85 100, 90 85, 100 70
+           C110 65, 120 65, 130 70 Z" 
+        fill="#81D4FA" opacity="0.7"/>
+  
+  <!-- Psi symbol stylized in aqua/green -->
+  <g transform="translate(55, 95)">
+    <path d="M20 0 L20 50 M10 15 Q20 5 30 15" 
+          stroke="url(#aqua)" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M5 45 Q20 55 35 45" 
+          stroke="url(#aqua)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Intertwined J and T -->
+  <!-- Letter J in pink -->
+  <path d="M95 45 
+           L95 110 
+           Q95 140 70 145 
+           Q50 148 45 130" 
+        stroke="url(#pink)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- J top bar -->
+  <path d="M80 45 L110 45" 
+        stroke="url(#pink)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  
+  <!-- Letter T in aqua, intertwined -->
+  <path d="M105 55 L105 130" 
+        stroke="url(#aqua)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M80 55 L130 55" 
+        stroke="url(#aqua)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  
+  <!-- Decorative leaves in green/aqua -->
+  <g transform="translate(130, 50)">
+    <path d="M0 20 Q10 5 20 15 Q15 25 5 30 Q-5 25 0 20" fill="url(#leafGrad)"/>
+    <path d="M15 5 Q25 -5 35 8 Q28 18 18 20 Q8 15 15 5" fill="url(#leafGrad)" opacity="0.85"/>
+    <path d="M25 25 Q35 15 40 30 Q32 40 22 35 Q18 30 25 25" fill="url(#leafGrad)" opacity="0.7"/>
+  </g>
+  
+  <!-- Small swirl/growth element -->
+  <path d="M140 90 Q155 80 160 100 Q150 115 135 110" 
+        stroke="url(#pink)" stroke-width="3" fill="none" opacity="0.8"/>
+</svg>
