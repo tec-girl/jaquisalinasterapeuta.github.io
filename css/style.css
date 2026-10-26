@@ -406,6 +406,37 @@ a, button, .btn, .nav a, .service-card, .quote-item {
   opacity: 0.85;
 }
 
+.contact-lines {
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #25D366;
+  color: white !important;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+  background: #20bd5a;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; text-align: center; }
   .hero-content h2 { font-size: 1.95rem; }
