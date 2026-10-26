@@ -35,6 +35,11 @@ body {
   background: linear-gradient(180deg, var(--sky-blue-light) 0%, #fff 120px);
   line-height: 1.6;
   min-height: 100vh;
+  cursor: url("images/cursor-psi.png") 10 10, auto;
+}
+
+a, button, .btn, .nav a, .service-card, .quote-item {
+  cursor: url("images/cursor-psi.png") 10 10, pointer;
 }
 
 /* Header */
@@ -74,6 +79,7 @@ body {
   background: white;
   padding: 4px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  object-fit: contain;
 }
 
 .logo-text h1 {
@@ -206,6 +212,7 @@ body {
   display: block;
   border-radius: 20px;
   object-fit: cover;
+  object-position: center 15%;
   aspect-ratio: 3/4;
 }
 
@@ -408,6 +415,7 @@ body {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 20%;
   border: 5px solid white;
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
@@ -519,4 +527,10 @@ body {
 .quotes-list::-webkit-scrollbar-thumb {
   background: var(--aqua);
   border-radius: 3px;
+}
+
+/* Imagenes nitidas */
+img {
+  max-width: 100%;
+  height: auto;
 }
