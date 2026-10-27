@@ -20,9 +20,9 @@ body{
   color:var(--ink);
   background:var(--cream);
   line-height:1.65;
-  cursor:url('assets/cursor-psi.png') 59 8, auto;
+  cursor:url('assets/cursor-psi.png') 29 4, auto;
 }
-a, button, .lang-switch button{cursor:url('assets/cursor-psi.png') 59 8, pointer}
+a, button, .lang-switch button{cursor:url('assets/cursor-psi.png') 29 4, pointer}
 img{max-width:100%;display:block}
 h1, h2, h3{font-family:var(--serif);color:var(--navy);line-height:1.2}
 h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:.4rem 0 1rem}
@@ -181,4 +181,30 @@ h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:.4rem 0 1rem}
   .hero-logo{animation:none}
   .reveal{transition:none;opacity:1;transform:none}
   html{scroll-behavior:auto}
+}
+
+/* Frases (izquierda) + Recursos */
+.aside-layout{display:grid;grid-template-columns:360px 1fr;gap:3.5rem;align-items:start}
+.quotes{position:sticky;top:6.5rem;border-left:3px solid var(--navy);padding-left:1.6rem}
+.quotes h2{font-size:1.6rem}
+.quote-item{margin-top:1.8rem}
+.quote-item p{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--navy-soft);line-height:1.55}
+.quote-item cite{display:block;margin-top:.45rem;font-style:normal;font-family:var(--sans);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
+.res-sub{color:var(--muted);max-width:38rem}
+.crisis-card{background:var(--navy);color:#eaf0f6;padding:2rem 2.2rem;margin-top:2rem}
+.crisis-card h3{color:#fff;font-size:1.4rem;margin-bottom:.5rem}
+.crisis-card p{color:#c6d3e0;font-size:.95rem}
+.crisis-lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1.4rem}
+.crisis-lines a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);padding:1rem;text-decoration:none;color:#fff;transition:.2s}
+.crisis-lines a:hover{background:rgba(255,255,255,.16)}
+.crisis-lines b{display:block;font-size:.82rem;letter-spacing:.03em}
+.crisis-lines span{font-family:var(--serif);font-size:1.35rem;font-weight:700}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:1.6rem}
+.res-card{background:#fff;border:1px solid var(--line);padding:1.5rem 1.4rem;text-decoration:none;transition:.25s;display:block}
+.res-card:hover{transform:translateY(-3px);border-color:var(--steel);box-shadow:0 14px 30px rgba(22,50,79,.10)}
+.res-card h3{font-size:1.05rem;margin-bottom:.4rem}
+.res-card p{color:var(--muted);font-size:.9rem}
+@media (max-width: 860px){
+  .aside-layout{grid-template-columns:1fr}
+  .quotes{position:static}
 }
