@@ -22,3 +22,7 @@ Sitio en GitHub Pages: https://tec-girl.github.io/jaquisalinasterapeuta.github.i
 - Revisa y ajusta el texto “Sobre mí” con tu biografía real.
 
 Colores principales: azul cielo (#4FC3F7), verde agua (#26A69A), rosa (#EC407A).
+
+## Contribuidores
+
+Contribución preparada en colaboración por **psehgaft**, **san985tos**, **frankjunker87-arch** y **tec-girl**.
